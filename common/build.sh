@@ -140,7 +140,9 @@ function build_ros(){
 }
 
 function build_yocto(){
-	echo "we don't support yocto at this time"
+	cd yocto
+	source oe-init-build-env
+	bitbake core-image-minimal
 }
 
 function build_debian(){

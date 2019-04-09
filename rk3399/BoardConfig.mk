@@ -26,10 +26,10 @@ export RK_CFG_PCBA=rockchip_rk3399_pcba
 export RK_JOBS=12
 # target chip
 export RK_TARGET_PRODUCT=rk3399
-# Set rootfs type, including ext2 ext4 squashfs
-export RK_ROOTFS_TYPE=ext4
+# yocto machine
+export RK_YOCTO_MACHINE=rockchip-rk3399-sapphire-excavator
 # rootfs image path
-export RK_ROOTFS_IMG=buildroot/output/$RK_CFG_BUILDROOT/images/rootfs.$RK_ROOTFS_TYPE
+export RK_ROOTFS_IMG=yocto/build/tmp/deploy/images/${RK_YOCTO_MACHINE}/rootfs.img
 # Set oem partition type, including ext2 squashfs
 export RK_OEM_FS_TYPE=ext2
 # Set userdata partition type, including ext2, fat
